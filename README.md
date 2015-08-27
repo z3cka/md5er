@@ -4,6 +4,11 @@
 ## Usage
 ```node md5er.js DIR-1 DIR-2```
 
+Inspect output manually.
+### TODO
+1. put results in data model
+2. compare parts of data to find matches and diffs
+
 ## Sample output
 ```
 $ node md5er.js DRUP-640 DRUP-641
