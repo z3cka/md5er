@@ -1,7 +1,17 @@
+var fs = require('fs');
 var md5File = require('md5-file');
 
-process.argv.forEach(function(val, index, array) {
+process.argv.forEach(function (dir, index) {
   if (index > 1) {
-    console.log(index + ': ' + val + '  md5: ' + md5File('./' + val));
+    fs.readdir(process.argv[index], function (err, files) {
+      files.forEach(function (filename, index) {
+        var file = dir + '/' + filename;
+        fs.stat(file, function (err, stats) {
+          if (stats.isFile()) {
+            console.log(dir + '/' + filename + '  md5: ' + md5File(file));
+          }
+        });
+      });
+    });
   }
 });
