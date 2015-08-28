@@ -1,5 +1,5 @@
 ## Install
-```npm install md5-file```
+```npm install async md5-file```
 
 ## Usage
 ```node md5er.js DIR-1 DIR-2```
