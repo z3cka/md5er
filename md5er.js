@@ -1,6 +1,7 @@
 var async = require('async');
 var fs = require('fs');
 var md5File = require('md5-file');
+var prettyjson = require('prettyjson');
 
 var dirs = {};
 
@@ -16,7 +17,7 @@ async.waterfall([
 ],
 function (err) {
   console.log("Done processing dirs:");
-  console.log(dirs);
+  console.log(prettyjson.render(dirs));
 });
 
 function folderbuilder(dir) {
