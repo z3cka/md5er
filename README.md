@@ -12,7 +12,7 @@ Inspect output manually.
 
 ## Sample output
 ```
-$ node md5er-obj.js DRUP-640 DRUP-641
+$ node md5er.js DRUP-640 DRUP-641
 Done processing dirs:
 { 'DRUP-640':
    { '.gitignore': 'ba9dcac2d0c438c5d6a24d825821be47',
