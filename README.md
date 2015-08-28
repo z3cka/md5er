@@ -7,7 +7,7 @@
 Inspect output manually.
 ### TODO
 ~~1. put results in data model~~  
-2. compare parts of data to find matches and diffs
+2. compare parts of data to find matches and diffs  
 3. support for nested directories(?)
 
 ## Sample output
